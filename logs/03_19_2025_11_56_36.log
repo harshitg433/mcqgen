@@ -1,0 +1,32 @@
+[2025-03-19 11:56:37,250] 1707 asyncio - ERROR - Exception in callback AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/harshit433/mcqgen/env/lib/python3.8/site-packages/streamlit/runtime/app_session.py:494
+handle: <Handle AppSession._on_scriptrunner_event.<locals>.<lambda>() at /home/harshit433/mcqgen/env/lib/python3.8/site-packages/streamlit/runtime/app_session.py:494>
+Traceback (most recent call last):
+  File "/home/harshit433/mcqgen/env/lib/python3.8/asyncio/events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/harshit433/mcqgen/env/lib/python3.8/site-packages/streamlit/runtime/app_session.py", line 494, in <lambda>
+    lambda: self._handle_scriptrunner_event_on_event_loop(
+  File "/home/harshit433/mcqgen/env/lib/python3.8/site-packages/streamlit/runtime/app_session.py", line 621, in _handle_scriptrunner_event_on_event_loop
+    self._local_sources_watcher.update_watched_modules()
+  File "/home/harshit433/mcqgen/env/lib/python3.8/site-packages/streamlit/watcher/local_sources_watcher.py", line 177, in update_watched_modules
+    self._register_necessary_watchers(modules_paths)
+  File "/home/harshit433/mcqgen/env/lib/python3.8/site-packages/streamlit/watcher/local_sources_watcher.py", line 183, in _register_necessary_watchers
+    self._register_watcher(str(Path(path).resolve()), name)
+  File "/home/harshit433/mcqgen/env/lib/python3.8/site-packages/streamlit/watcher/local_sources_watcher.py", line 136, in _register_watcher
+    watcher=PathWatcher(filepath, self.on_file_changed),
+  File "/home/harshit433/mcqgen/env/lib/python3.8/site-packages/streamlit/watcher/event_based_path_watcher.py", line 107, in __init__
+    path_watcher.watch_path(
+  File "/home/harshit433/mcqgen/env/lib/python3.8/site-packages/streamlit/watcher/event_based_path_watcher.py", line 185, in watch_path
+    folder_handler.watch = self._observer.schedule(
+  File "/home/harshit433/mcqgen/env/lib/python3.8/site-packages/watchdog/observers/api.py", line 306, in schedule
+    emitter.start()
+  File "/home/harshit433/mcqgen/env/lib/python3.8/site-packages/watchdog/utils/__init__.py", line 86, in start
+    self.on_thread_start()
+  File "/home/harshit433/mcqgen/env/lib/python3.8/site-packages/watchdog/observers/inotify.py", line 123, in on_thread_start
+    self._inotify = InotifyBuffer(path, self.watch.is_recursive, event_mask)
+  File "/home/harshit433/mcqgen/env/lib/python3.8/site-packages/watchdog/observers/inotify_buffer.py", line 37, in __init__
+    self._inotify = Inotify(path, recursive, event_mask)
+  File "/home/harshit433/mcqgen/env/lib/python3.8/site-packages/watchdog/observers/inotify_c.py", line 158, in __init__
+    Inotify._raise_error()
+  File "/home/harshit433/mcqgen/env/lib/python3.8/site-packages/watchdog/observers/inotify_c.py", line 401, in _raise_error
+    raise OSError(errno.EMFILE, "inotify instance limit reached")
+OSError: [Errno 24] inotify instance limit reached
