@@ -1,6 +1,6 @@
 MCQ,Choices,Correct
-What is machine learning?,a: The study of artificial intelligence concerned with developing and studying statistical algorithms | b: The study of computer hardware | c: The study of human cognitive processes | d: The study of quantum computing,a
-Who coined the term 'machine learning'?,a: Donald Hebb | b: Tom M. Mitchell | c: Arthur Samuel | d: Walter Pitts,c
-What is the purpose of machine learning algorithms for stock trading?,a: To predict future outcomes based on models developed | b: To classify data based on models developed | c: To analyze human cognitive processes | d: To create computer vision models,a
-What is the foundation of machine learning?,a: Data mining | b: Computer vision | c: Statistics and mathematical optimization | d: Natural language processing,c
-In what field does machine learning find application in speech recognition?,a: Agriculture | b: Medicine | c: Natural language processing | d: Speech recognition,d
+What is machine learning focused on?,a: Development of neural networks | b: Development and study of statistical algorithms | c: Development of computer vision | d: Development of email filtering systems,b
+Which field of study focuses on exploratory data analysis via unsupervised learning?,a: Machine learning | b: Deep learning | c: Natural language processing | d: Data mining,d
+Who coined the term 'machine learning' in 1959?,a: Donald Hebb | b: Tom M. Mitchell | c: Arthur Samuel | d: Alan Turing,c
+What was the purpose of the experimental 'learning machine' Cybertron developed by Raytheon Company in the early 1960s?,"a: To play chess | b: To analyze sonar signals, electrocardiograms, and speech patterns | c: To recognize patterns in nature | d: To study human cognitive processes",b
+What is one of the objectives of modern-day machine learning?,a: To develop new programming languages | b: To classify data based on developed models | c: To create virtual reality simulations | d: To predict future stock prices,b
